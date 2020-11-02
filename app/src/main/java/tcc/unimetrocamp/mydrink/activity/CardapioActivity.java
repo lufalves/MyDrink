@@ -310,7 +310,7 @@ public class CardapioActivity extends AppCompatActivity {
         builder.setTitle("Selecione um método de pagamento");
 
         CharSequence[] itens = new CharSequence[]{
-                "Cartão", "Dinheiro"
+                "Dinheiro", "Máquina cartão"
         };
         builder.setSingleChoiceItems(itens, 0, new DialogInterface.OnClickListener() {
             @Override
@@ -330,7 +330,7 @@ public class CardapioActivity extends AppCompatActivity {
                 String observacao = editObservacao.getText().toString();
                 pedidoRecuperado.setMetodoPagamento( metodoPagamento );
                 pedidoRecuperado.setObservacao( observacao );
-                pedidoRecuperado.setStatus("Confirmado");
+                pedidoRecuperado.setStatus("confirmado");
                 pedidoRecuperado.confimar();
                 pedidoRecuperado.remover();
                 pedidoRecuperado = null;
