@@ -51,7 +51,7 @@ public class EmpresaActivity extends AppCompatActivity {
 
         //Configurações Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Ifood - empresa");
+        toolbar.setTitle("MyDrink - Empresa");
         setSupportActionBar(toolbar);
 
         //Configura recyclerview

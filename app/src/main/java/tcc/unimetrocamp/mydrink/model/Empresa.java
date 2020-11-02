@@ -2,10 +2,12 @@ package tcc.unimetrocamp.mydrink.model;
 
 import com.google.firebase.database.DatabaseReference;
 
+import java.io.Serializable;
+
 import tcc.unimetrocamp.mydrink.helper.ConfiguracaoFirebase;
 
 
-public class Empresa {
+public class Empresa implements Serializable {
 
     private String idUsuario;
     private String urlImagem;
